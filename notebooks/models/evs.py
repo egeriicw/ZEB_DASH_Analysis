@@ -23,10 +23,4 @@ class Route:
 
 
 
-class ElectricBus:
 
-    def __init__(self):
-        self.battery = Battery(400, 1, '1')
-
-    def drive(self, speed: float, time: float, core_systems_power: float, ancillary_systems_power: float, heating_systems_power: float, cooling_systems_power: float):
-        self.battery.discharge(-1.0, 10.0, dt.datetime.now())
